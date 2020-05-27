@@ -1,0 +1,170 @@
+<style>
+
+    #form {
+        margin:auto;
+    }
+
+    #title {
+        margin: auto;
+        text-align: center;
+    }
+
+    #description {
+        margin: auto;
+        text-align: center;
+    }
+
+    #client-data {
+        margin: auto;
+        text-align: center;
+        padding: 2%;
+    }
+
+    #guitars {
+        margin: auto;
+        text-align: center;
+        padding: 2%;
+    }
+
+    #pickups {
+        margin: auto;
+        text-align: center;
+        padding: 2%;
+    }
+
+    #strings {
+        margin: auto;
+        text-align: center;
+        padding: 2%;
+    }
+
+    #necks {
+        margin: auto;
+        text-align: center;
+        padding: 2%;
+    }
+
+    #necks {
+        margin: auto;
+        text-align: center;
+        padding: 2%;
+    }
+
+    #submit {
+        margin: auto;
+        text-align: center;
+        padding: 2%;
+    }
+</style>
+
+<h1 id="title"> What is your favorite Guitar SetUp?
+
+</h1>
+
+<p id="description">
+    Explain us what kind of guitar, strings and pickups you prefer
+</p>
+
+<form id="survey-form">
+
+    <div id="client-data">
+        <label id="name-label" for="name">First name:</label>
+        <input 
+            type="text" 
+            id="name" 
+            name="name"
+            required
+            placeholder="Enter your name here">
+    
+    <label id="email-label" for="email">Enter your email:</label>
+        <input 
+            type= "email" 
+            id= "email" 
+            name= "email"
+            required 
+            placeholder="Enter your email here">
+
+        <label id="number-label" for="number">Enter your age:</label>
+        <input 
+            type="number" 
+            id="number" 
+            name="number"
+            min="18"
+            max="100" 
+            placeholder="Enter your age here">
+    </div>
+
+    <div id="guitars">
+        <select name="Favorite Guitars" id="dropdown">
+            <option value="jackson">Jackson</option>
+            <option value="dean">Dean</option>
+            <option value="esp">ESP</option>
+            <option value="les-paul">Les Paul</option>
+            <option value="fender">Fender</option>
+            <option value="bc-rich">B.C. Rich</option>
+            <option value="gibson">Gibson</option>
+        </select>
+    </div>
+
+    <div id="pickups">
+
+        <label for="single-coil">Single Coil</label><br>
+        <input 
+            type="radio" 
+            id="single-coil"
+            name="pickups"
+            value="single-coil">
+    
+        <label for="humbucker">Humbucker</label><br>    
+        <input
+            type="radio"
+            id="humbucker"
+            name="pickups"
+            value="humbucker">
+
+    </div>
+
+    <div id="strings">
+
+        <label for="flat-wound">Flat Wound</label><br>
+        <input
+            type="checkbox"
+            id="string-type"
+            name="strings"
+            value="flat-wound">
+        
+        <label for="round-wound">Round Wound</label><br>
+        <input
+            type="checkbox" 
+            id="string-type"
+            name="strings"
+            value="round-wound">
+
+        <label for="semi-flat">Semi Flat</label><br>
+        <input
+            type="checkbox"
+            id="strin-type"
+            name="strings"
+            value="semi-flat">
+    
+    </div>
+
+    <div id="necks">
+    
+        <label for="necks">Describe your favorite neck profile</label><br>
+        <textarea id="necks" name="necks" rows="5" cols="100"></textarea>
+
+    </div>
+
+    <div id="submit-button">
+ 
+        <input 
+            type= "submit"
+            id= "submit"
+        >
+
+    <div>
+
+</form>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
